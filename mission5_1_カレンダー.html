@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+要件
+    日付の表示
+    曜日の表示
+    土日だとわかる表示
+    画面を開いた当日だとわかる表示
+    画面を開いた当月のカレンダーを表示
+    クリックすると何かが起こるギミック(例: 次の月のカレンダーを表示)
+-->
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>カレンダー</title>
+        <style>
+            h1 {
+                font-size: 18px;
+            }
+
+            table {
+                border-spacing: 0;
+                border-collapse: collapse;
+            }
+
+            td {
+                border: 1px solid #ddd;
+                padding: 5px;
+                text-align: center;
+            }
+
+            td:first-child {
+                color: red;
+            }
+
+            td:last-child {
+                color: royalblue;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <button id="prev" type="button">前の月</button>
+        <button id="next" type="button">次の月</button>
+        <div id = "calendar"></div>
+        <script src="mission5_1_カレンダー.js"></script>
+    </body>
+</html>
